@@ -1,0 +1,16 @@
+--- DO DO
+Select the name, address, city, and region of employees.
+Select the name, address, city, and region of employees living in USA.
+3. Select ProductName and Price from Products, aliasing UnitPrice as "Unit_Price".
+4. Select CompanyName, ContactName, and Country from Customers, with column aliases "Company", "Contact", and "Nation".
+5. Select all product ids and names that have unit in stock 0
+6. Select all products with Price between 20 and 40
+7. Insert a new category: CategoryName = 'Snacks', Description = 'Quick snacks and chips'.
+8. Change the price of the product with id 13 to 15
+
+
+
+
+
+--- DONT DO 
+Select the first 5 rows from the Orders table.
