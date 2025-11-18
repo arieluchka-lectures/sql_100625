@@ -26,12 +26,14 @@ Will return all rows, but only these columns
 SELECT <Column1>, <Column2>, <Column3>
 FROM <table_name>;
 ```
+
 The same but also changes the presented column name
 ```sql
 SELECT <Column1> AS another_name1, <Column2>, <Column3> AS another_new_name
 FROM <table_name>;
 ```
 
+#### WHERE
 "WHERE" can filter what **Rows** we get back
 ```sql
 SELECT *
@@ -39,14 +41,24 @@ FROM Orders
 WHERE ShipCountry = "Germany"
 ```
 
-
-#todo add example
+#### ORDER BY
+Use `ORDER BY` to change the order of the displayed rows
 ```sql
 SELECT *
 FROM Orders 
 WHERE ShipCountry = "Germany"
-ORDER BY ...
+ORDER BY Freight
 ```
+
+You can control that with `ASC`/`DESC` at the end of the line
+```sql
+SELECT *
+FROM Orders 
+WHERE ShipCountry = "Germany"
+ORDER BY Freight DESC
+```
+
+
 
 ## Add new data to table
 
@@ -56,7 +68,20 @@ INSERT INTO <TABLE_NAME>
 VALUES (value1, value2, value3, ...)
 ```
 
+We can also insert a new row, with **only some of the values**:
+```sql
+INSERT INTO <TABLE_NAME> (Column1, Column5, Column9)
+VALUES (value1, value5, value9)
+```
 
+We can also add multiple rows at once:
+```sql
+INSERT INTO <TABLE_NAME> (Column1, Column5, Column9)
+VALUES 
+    (value11, value51, value91)
+    (value12, value52, value92)
+    (value13, value53, value93)
+```
 
 
 
